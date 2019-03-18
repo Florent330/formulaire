@@ -70,12 +70,11 @@ if (!empty($_POST)) {
     if(empty($_POST['message'])) {
         $errors ['message1'] = 'Your phone cannot be empty';
     }
+    if (count($errors) == 0){
 
+        header("Location:succes.php");
 
+    }
 }
-if (count($errors) == 0){
 
-    header("Location:succes.php");
-
-}
 
